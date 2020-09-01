@@ -61,7 +61,6 @@
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
      <None Include="Assets\Plugins\Android\com.google.firebase.firebase-app-unity-6.15.2\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
-     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\R.txt" />
      <None Include="Assets\Plugins\Android\com.google.firebase.firebase-common-19.3.0\proguard.txt" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml" />
@@ -81,7 +80,6 @@
      <None Include="Assets\Plugins\Android\com.google.firebase.firebase-auth-unity-6.15.2\R.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\third_party_licenses.txt" />
-     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\com.google.firebase.firebase-auth-unity-6.15.2\proguard.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />

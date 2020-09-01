@@ -60,40 +60,6 @@
      <Compile Include="Assets\CORE\World\Editor\MovingObjectCreator.cs" />
      <Compile Include="Assets\CORE\World\Editor\TileCreator.cs" />
      <Compile Include="Assets\GoogleMobileAds\Editor\AdMobDependencies.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\BloomModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\BuiltinDebugViewsEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\ChromaticAberrationEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\ColorGradingModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\DefaultPostFxModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\DepthOfFieldModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\DitheringModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\EyeAdaptationModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\FogModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\GrainModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\MotionBlurModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\ScreenSpaceReflectionModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\UserLutModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Models\VignetteModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Monitors\HistogramMonitor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Monitors\ParadeMonitor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Monitors\VectorscopeMonitor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Monitors\WaveformMonitor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PostProcessingBehaviourEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PostProcessingFactory.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PostProcessingInspector.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PostProcessingModelEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PostProcessingMonitor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PropertyDrawers\GetSetDrawer.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PropertyDrawers\MinDrawer.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\PropertyDrawers\TrackballGroupDrawer.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Utils\CurveEditor.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorGUIHelper.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
-     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
      <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
      <None Include="Assets\ExternalDependencyManager\Editor\GoogleRegistries.xml" />
      <None Include="Assets\Firebase\Editor\AuthDependencies.xml" />
@@ -377,21 +343,6 @@
  <Reference Include="Unity.Tasks">
  <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
  </Reference>
- <Reference Include="GitHub.Api.45">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Logging">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Unity.45">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.UnityShim">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
- </Reference>
- <Reference Include="sfw.net">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/deneg/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -422,8 +373,6 @@
       <Project>{B13EDF04-26F1-889E-BA24-6F38182AFE2E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{B2D2DC39-281B-1D0E-0065-5F900FD4DC87}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{5AAB104C-475C-1854-0E5F-8A710A5DF4EB}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
