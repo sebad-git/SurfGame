@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ad3f3301633e448835d9140a189829, type: 3}
+  m_Name: TILES
+  m_EditorClassIdentifier: 
+  tilesSpawn:
+    tileLenght: 192.6
+    tilesPerScreen: 5
+    destroyTime: 15
+    firstTile: {fileID: 1000010317065492, guid: ab82eab337c8c8c4fb78f646e7b383f5,
+      type: 2}
+    tiles:
+    - {fileID: 1000014099238720, guid: e5a36c6861181674a8734b7f1a539717, type: 2}
+    - {fileID: 1000012320823240, guid: f6357da3792505e40b1180c07b76eb7f, type: 2}
+    - {fileID: 1000012296037262, guid: 7c9b4601265dc8041b3b40001e3007e4, type: 2}
+    - {fileID: 1000012697767916, guid: d8eb873415dfab24ca938d77232978ec, type: 2}
+    - {fileID: 0}
+    - {fileID: 1000013307458108, guid: 933c155b390973f40b481308bb5fe206, type: 2}
+    - {fileID: 1000011343130888, guid: 04917dcdbef5cc247984c1be160f29a0, type: 2}
+  itemSpawn:
+    spawnTimeRange: {x: 10, y: 30}
+    spawnDistanceRange: {x: 10, y: 40}
+    powerUps: []

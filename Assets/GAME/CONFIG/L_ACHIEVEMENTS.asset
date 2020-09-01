@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c438dbe2c52db945be302e01707ef66, type: 3}
+  m_Name: L_ACHIEVEMENTS
+  m_EditorClassIdentifier: 
+  emulateLanguage: 0
+  emulatedLanguage: 1
+  dictionary:
+  - keywordId: SCORE_TITLE_1
+    translations:
+    - language: 10
+      text: Not Bad
+    - language: 32
+      text: No esta Mal
+    - language: 14
+      text: Pas mal
+    - language: 20
+      text: Non male
+    - language: 1
+      text: "\u0644\u064A\u0633 \u0633\u064A\u0626\u0627"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_DESCRIPTION_1
+    translations:
+    - language: 10
+      text: Get a score of 200.
+    - language: 32
+      text: Obten un puntaje de 200.
+    - language: 14
+      text: Obtenez une note de 200.
+    - language: 20
+      text: Ottenere un punteggio di 200.
+    - language: 1
+      text: "\u0627\u0644\u062D\u0635\u0648\u0644 \u0639\u0644\u0649 \u062F\u0631\u062C\u0629
+        200."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_TITLE_1
+    translations:
+    - language: 10
+      text: Wax that thing
+    - language: 32
+      text: Encera esa cosa
+    - language: 14
+      text: Cire cette chose
+    - language: 20
+      text: Cera cosa
+    - language: 1
+      text: "\u0627\u0644\u0634\u0645\u0639 \u0647\u0630\u0627 \u0627\u0644\u0634\u064A\u0621"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_DESCRIPTION_1
+    translations:
+    - language: 10
+      text: Reach 50 miles.
+    - language: 32
+      text: Alcanza una distancia de 50 metros
+    - language: 14
+      text: "Atteindre 50 m\xE8tres."
+    - language: 20
+      text: Raggiungere i 50 metri.
+    - language: 1
+      text: "\u062A\u0635\u0644 \u0625\u0644\u0649 50 \u0645\u064A\u0644\u0627."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_TITLE_2
+    translations:
+    - language: 10
+      text: Wow
+    - language: 32
+      text: Wow
+    - language: 14
+      text: Wow
+    - language: 20
+      text: Wow
+    - language: 1
+      text: "\u0631\u0627\u0626\u0639"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_DESCRIPTION_2
+    translations:
+    - language: 10
+      text: Get a score of 1.000.
+    - language: 32
+      text: Obten un puntaje de 1.000.
+    - language: 14
+      text: Obtenez une note de 1.000.
+    - language: 20
+      text: Ottenere un punteggio di 1.000.
+    - language: 1
+      text: "\u0627\u0644\u062D\u0635\u0648\u0644 \u0639\u0644\u0649 \u062F\u0631\u062C\u0629
+        1.000."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_TITLE_2
+    translations:
+    - language: 10
+      text: LayBack
+    - language: 32
+      text: Planchando
+    - language: 14
+      text: "R\xE9tr\xE9cissement"
+    - language: 20
+      text: Distendersi
+    - language: 1
+      text: "\u0625\u0633\u062A\u0644\u0642\u0627\u0621"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_DESCRIPTION_2
+    translations:
+    - language: 10
+      text: Reach 200 miles.
+    - language: 32
+      text: Alcanza una distancia de 200 metros.
+    - language: 14
+      text: "Atteindre 200 m\xE8tres."
+    - language: 20
+      text: Raggiungere i 200 metri.
+    - language: 1
+      text: "\u062A\u0635\u0644 \u0625\u0644\u0649 200 \u0645\u064A\u0644\u0627."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_TITLE_3
+    translations:
+    - language: 10
+      text: The Dude
+    - language: 32
+      text: El Tipo
+    - language: 14
+      text: L'homme
+    - language: 20
+      text: Il ragazzo
+    - language: 1
+      text: "\u0627\u0644\u0631\u0641\u064A\u0642 - \u0627\u0644\u0635\u062F\u064A\u0642
+        - \u0627\u0644\u0631\u062C\u0644"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_DESCRIPTION_3
+    translations:
+    - language: 10
+      text: Get a score of 5.000.
+    - language: 32
+      text: Obten un puntaje de 5.000.
+    - language: 14
+      text: Obtenez une note de 5.000.
+    - language: 20
+      text: Ottenere un punteggio di 5.000.
+    - language: 1
+      text: "\u0627\u0644\u062D\u0635\u0648\u0644 \u0639\u0644\u0649 \u062F\u0631\u062C\u0629
+        5.000."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_TITLE_3
+    translations:
+    - language: 10
+      text: White men cant jump
+    - language: 32
+      text: Los Blancos no saben saltar
+    - language: 14
+      text: Les hommes blancs ne peuvent pas sauter
+    - language: 20
+      text: "Chi non salta bianco \xE8"
+    - language: 1
+      text: "\u0627\u0644\u0631\u062C\u0627\u0644 \u0627\u0644\u0628\u064A\u0636 \u0644\u0627
+        \u064A\u0645\u0643\u0646 \u0627\u0644\u0642\u0641\u0632"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_DESCRIPTION_3
+    translations:
+    - language: 10
+      text: Reach 1.000 miles.
+    - language: 32
+      text: Alcanza una distancia de 1.000 metros.
+    - language: 14
+      text: "Atteindre 1.000 m\xE8tres."
+    - language: 20
+      text: Raggiungere i 1.000 metri.
+    - language: 1
+      text: "\u062A\u0635\u0644 \u0625\u0644\u0649 1.000 \u0645\u064A\u0644\u0627."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_TITLE_4
+    translations:
+    - language: 10
+      text: Radical
+    - language: 32
+      text: Radical
+    - language: 14
+      text: Radical
+    - language: 20
+      text: Radicale
+    - language: 1
+      text: "\u0631\u0627\u0626\u0639"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_DESCRIPTION_4
+    translations:
+    - language: 10
+      text: Get a score of 10.000.
+    - language: 32
+      text: Obten un puntaje de 10.000.
+    - language: 14
+      text: Obtenez une note de 10.000.
+    - language: 20
+      text: Ottenere un punteggio di 10.000.
+    - language: 1
+      text: "\u0627\u0644\u062D\u0635\u0648\u0644 \u0639\u0644\u0649 \u062F\u0631\u062C\u0629
+        10.000."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_TITLE_4
+    translations:
+    - language: 10
+      text: From coast to coast
+    - language: 32
+      text: De costa a costa
+    - language: 14
+      text: "D'un oc\xE9an \xE0 l'autre"
+    - language: 20
+      text: Da costa a costa
+    - language: 1
+      text: "\u0645\u0646 \u0627\u0644\u0633\u0627\u062D\u0644 \u0625\u0644\u0649
+        \u0627\u0644\u0633\u0627\u062D\u0644"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_DESCRIPTION_4
+    translations:
+    - language: 10
+      text: Reach 15.000 miles.
+    - language: 32
+      text: Alcanza una distancia de 15.000 metros.
+    - language: 14
+      text: "Atteindre 15.000 m\xE8tres."
+    - language: 20
+      text: Raggiungere i 15.000 metri.
+    - language: 1
+      text: "\u062A\u0635\u0644 \u0625\u0644\u0649 15.000 \u0645\u064A\u0644\u0627."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_TITLE_5
+    translations:
+    - language: 10
+      text: Cowabunga
+    - language: 32
+      text: Cowabunga
+    - language: 14
+      text: Cowabunga
+    - language: 20
+      text: Cowabunga
+    - language: 1
+      text: Cowabunga
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_DESCRIPTION_5
+    translations:
+    - language: 10
+      text: Get a score of 25.000.
+    - language: 32
+      text: Obten un puntaje de 25.000.
+    - language: 14
+      text: Obtenez une note de 25.000.
+    - language: 20
+      text: Ottenere un punteggio di 25.000.
+    - language: 1
+      text: "\u0627\u0644\u062D\u0635\u0648\u0644 \u0639\u0644\u0649 \u062F\u0631\u062C\u0629
+        25.000."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_TITLE_5
+    translations:
+    - language: 10
+      text: Epic
+    - language: 32
+      text: Epico
+    - language: 14
+      text: "\xC9pique"
+    - language: 20
+      text: Epico
+    - language: 1
+      text: "\u0627\u0644\u0645\u0644\u062D\u0645"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_DESCRIPTION_5
+    translations:
+    - language: 10
+      text: Reach 50.000 miles.
+    - language: 32
+      text: Alcanza una distancia de 50.000 metros.
+    - language: 14
+      text: "Atteindre 50.000 m\xE8tres."
+    - language: 20
+      text: Raggiungere i 50.000 metri.
+    - language: 1
+      text: "\u062A\u0635\u0644 \u0625\u0644\u0649 50.000 \u0645\u064A\u0644\u0627."
+    showTranslations: 0
+    showWord: 0

@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971e032dae6e9e44c94780932a991ea8, type: 3}
+  m_Name: ACHIEVEMENTS
+  m_EditorClassIdentifier: 
+  emulateLanguage: 0
+  emulatedLanguage: 14
+  language: {fileID: 11400000, guid: f8023f0703fee1c4e905d2eeada5c17b, type: 2}
+  achievmentsList:
+  - name: SCORE1 (Not Bad)
+    aid: ACHV1
+    title: 0
+    description: 1
+    gpid: 
+    category: 1
+    icon: {fileID: 0}
+    unlockValueType: 0
+    unlockValueInt: 200
+    unlockValueString: 
+    unlockValueFloat: 0
+    unlockValueBoolean: 0
+    active: 0
+  - name: DISTANCE1 (Wax that thing)
+    aid: ACHV2
+    title: 2
+    description: 3
+    gpid: 
+    category: 2
+    icon: {fileID: 0}
+    unlockValueType: 1
+    unlockValueInt: 0
+    unlockValueString: 
+    unlockValueFloat: 50
+    unlockValueBoolean: 0
+    active: 0
+  - name: SCORE2 (Wow)
+    aid: ACHV3
+    title: 4
+    description: 5
+    gpid: 
+    category: 1
+    icon: {fileID: 0}
+    unlockValueType: 0
+    unlockValueInt: 1000
+    unlockValueString: 
+    unlockValueFloat: 0
+    unlockValueBoolean: 0
+    active: 0
+  - name: DISTANCE 2 (LayBack)
+    aid: ACHV4
+    title: 6
+    description: 7
+    gpid: 0
+    category: 2
+    icon: {fileID: 0}
+    unlockValueType: 1
+    unlockValueInt: 0
+    unlockValueString: 
+    unlockValueFloat: 200
+    unlockValueBoolean: 0
+    active: 0
+  - name: SCORE 3 (The Dude)
+    aid: ACHV5
+    title: 8
+    description: 9
+    gpid: 
+    category: 1
+    icon: {fileID: 0}
+    unlockValueType: 0
+    unlockValueInt: 5000
+    unlockValueString: 
+    unlockValueFloat: 0
+    unlockValueBoolean: 0
+    active: 0
+  - name: DISTANCE 3 (White men cant jump)
+    aid: ACHV6
+    title: 10
+    description: 11
+    gpid: 
+    category: 2
+    icon: {fileID: 0}
+    unlockValueType: 1
+    unlockValueInt: 1000
+    unlockValueString: 
+    unlockValueFloat: 1000
+    unlockValueBoolean: 0
+    active: 0
+  - name: SCORE 4 (Radical)
+    aid: ACHV7
+    title: 12
+    description: 13
+    gpid: 
+    category: 1
+    icon: {fileID: 0}
+    unlockValueType: 0
+    unlockValueInt: 10000
+    unlockValueString: 
+    unlockValueFloat: 0
+    unlockValueBoolean: 0
+    active: 0
+  - name: DISTANCE 4 (From coast to coast)
+    aid: ACHV8
+    title: 14
+    description: 15
+    gpid: 
+    category: 2
+    icon: {fileID: 0}
+    unlockValueType: 1
+    unlockValueInt: 0
+    unlockValueString: 
+    unlockValueFloat: 15000
+    unlockValueBoolean: 0
+    active: 0
+  - name: SCORE 5 (Cowabunga)
+    aid: ACHV9
+    title: 16
+    description: 17
+    gpid: 
+    category: 1
+    icon: {fileID: 0}
+    unlockValueType: 0
+    unlockValueInt: 25000
+    unlockValueString: 
+    unlockValueFloat: 0
+    unlockValueBoolean: 0
+    active: 0
+  - name: DISTANCE 5 (Epic)
+    aid: ACHV10
+    title: 18
+    description: 19
+    gpid: 
+    category: 2
+    icon: {fileID: 0}
+    unlockValueType: 1
+    unlockValueInt: 0
+    unlockValueString: 
+    unlockValueFloat: 50000
+    unlockValueBoolean: 0
+    active: 0

@@ -1,0 +1,511 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c438dbe2c52db945be302e01707ef66, type: 3}
+  m_Name: GAME_LOCALE
+  m_EditorClassIdentifier: 
+  emulateLanguage: 0
+  emulatedLanguage: 1
+  dictionary:
+  - keywordId: PLAY
+    translations:
+    - language: 10
+      text: Play
+    - language: 32
+      text: Jugar
+    - language: 14
+      text: Jouer
+    - language: 20
+      text: Giocare
+    - language: 1
+      text: "\u0644\u0639\u0628"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: OPTIONS
+    translations:
+    - language: 10
+      text: Options
+    - language: 32
+      text: Opciones
+    - language: 14
+      text: Options
+    - language: 20
+      text: Opzioni
+    - language: 1
+      text: "\u062E\u064A\u0627\u0631\u0627\u062A"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORES
+    translations:
+    - language: 10
+      text: Top 10
+    - language: 32
+      text: Top 10
+    - language: 14
+      text: Top 10
+    - language: 20
+      text: Top 10
+    - language: 1
+      text: "\u0623\u0641\u0636\u0644 \u0639\u0634\u0631\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: EXIT
+    translations:
+    - language: 10
+      text: Exit
+    - language: 32
+      text: Salir
+    - language: 14
+      text: Sortie
+    - language: 20
+      text: Uscita
+    - language: 1
+      text: "\u0649\u062E\u0631\u062C"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: OBJECTIVES
+    translations:
+    - language: 10
+      text: Objectives
+    - language: 32
+      text: Objetivos
+    - language: 14
+      text: Objectifs
+    - language: 20
+      text: Obiettivi
+    - language: 1
+      text: "\u0627\u0644\u0623\u0647\u062F\u0627\u0641"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SENSITIVITY
+    translations:
+    - language: 10
+      text: Sensitivity
+    - language: 32
+      text: Sensibilidad
+    - language: 14
+      text: "Sensibilit\xE9"
+    - language: 20
+      text: "Sensibilit\xE0"
+    - language: 1
+      text: "\u062D\u0633\u0627\u0633\u064A\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: PLAYER_NAME
+    translations:
+    - language: 10
+      text: Your Name
+    - language: 32
+      text: Tu Nombre
+    - language: 14
+      text: Votre Nom
+    - language: 20
+      text: 'Il tuo nome '
+    - language: 1
+      text: "\u0627\u0633\u0645\u0643"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: LOADING_SCORES
+    translations:
+    - language: 10
+      text: Loading...
+    - language: 32
+      text: Cargando...
+    - language: 14
+      text: Chargement...
+    - language: 20
+      text: Caricamento...
+    - language: 1
+      text: "\u062C\u0627\u0631 \u0627\u0644\u062A\u062D\u0645\u064A\u0644"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: BEST_SCORES
+    translations:
+    - language: 10
+      text: Top 10 Scores.
+    - language: 32
+      text: Mejores 10 Puntajes.
+    - language: 14
+      text: Top 10 Marquer
+    - language: 20
+      text: Top 10 Punteggi
+    - language: 1
+      text: "\u0623\u0641\u0636\u0644 \u0639\u0634\u0631\u0629 \u062F\u0631\u062C\u0627\u062A"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SOUND
+    translations:
+    - language: 10
+      text: Sound
+    - language: 32
+      text: Sonido
+    - language: 14
+      text: Du son
+    - language: 20
+      text: Suono
+    - language: 1
+      text: "\u0635\u0648\u062A"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: RESET
+    translations:
+    - language: 10
+      text: RESET
+    - language: 32
+      text: REESTABLECER
+    - language: 14
+      text: "R\xC9INITIALISER"
+    - language: 20
+      text: RESET
+    - language: 1
+      text: "\u0625\u0639\u0627\u062F\u0629 \u062A\u0639\u064A\u064A\u0646"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: LOADING
+    translations:
+    - language: 10
+      text: Loading...
+    - language: 32
+      text: Cargando...
+    - language: 14
+      text: Chargement...
+    - language: 20
+      text: Caricamento...
+    - language: 1
+      text: "\u062C\u0627\u0631 \u0627\u0644\u062A\u062D\u0645\u064A\u0644"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORES_TYPE
+    translations:
+    - language: 10
+      text: Scores
+    - language: 32
+      text: Puntajes
+    - language: 14
+      text: Marquer
+    - language: 20
+      text: Punteggi
+    - language: 1
+      text: "\u062F\u0631\u062C\u0627\u062A"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: BEST_SCORES_BUTTON
+    translations:
+    - language: 10
+      text: By Score
+    - language: 32
+      text: Por Puntaje
+    - language: 14
+      text: Par Marquer
+    - language: 20
+      text: Per Punteggi
+    - language: 1
+      text: "\u0639\u062F\u062F \u0646\u0642\u0627\u0637"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: BEST_DISTANCES_BUTTON
+    translations:
+    - language: 10
+      text: By Distance
+    - language: 32
+      text: Por Distancia
+    - language: 14
+      text: "Par \xC9loignement"
+    - language: 20
+      text: Per Distanza
+    - language: 1
+      text: "\u0645\u0646 \u062E\u0644\u0627\u0644 \u0627\u0644\u0645\u0633\u0627\u0641\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: INSTRUCTIONS_SIDES
+    translations:
+    - language: 10
+      text: Tilt the mobile to go left and right.
+    - language: 32
+      text: Gira la pantalla para moverte a los lados.
+    - language: 14
+      text: "Incliner le mobile pour aller \xE0 gauche et \xE0 droite"
+    - language: 20
+      text: Inclinare il cellulare per andare a destra ea sinistra.
+    - language: 1
+      text: "\u0625\u0645\u0627\u0644\u0629 \u0627\u0644\u0647\u0627\u062A\u0641 \u0627\u0644\u0646\u0642\u0627\u0644
+        \u0644\u0644\u0630\u0647\u0627\u0628 \u0627\u0644\u064A\u0633\u0627\u0631
+        \u0648\u0627\u0644\u064A\u0645\u064A\u0646."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: INSTRUCTIONS_JUMP
+    translations:
+    - language: 10
+      text: Tap the screen to jump.
+    - language: 32
+      text: Toca la pantalla para saltar
+    - language: 14
+      text: "Appuyez sur l'\xE9cran pour sauter."
+    - language: 20
+      text: Toccare lo schermo per saltare.
+    - language: 1
+      text: "\u0627\u0636\u063A\u0637 \u0639\u0644\u0649 \u0627\u0644\u0634\u0627\u0634\u0629
+        \u0644\u0644\u0642\u0641\u0632."
+    showTranslations: 0
+    showWord: 0
+  - keywordId: CREDITS
+    translations:
+    - language: 10
+      text: CREDITS
+    - language: 32
+      text: CREDITOS
+    - language: 14
+      text: "CR\xC9DITS"
+    - language: 20
+      text: CREDITI
+    - language: 1
+      text: "\u0645\u0641\u062E\u0631\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: COLLABORATORS
+    translations:
+    - language: 10
+      text: OUR AWESOME COLLABORATORS
+    - language: 32
+      text: NUESTROS GRANDES COLABORADORES
+    - language: 14
+      text: NOS GRANDS COLLABORATEURS
+    - language: 20
+      text: I NOSTRI GRANDI COLLABORATORI
+    - language: 1
+      text: "\u0644\u062F\u064A\u0646\u0627 \u0627\u0644\u0645\u062A\u0639\u0627\u0648\u0646\u064A\u0646
+        \u0639\u0638\u064A\u0645"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: GREETING
+    translations:
+    - language: 10
+      text: Welcome back
+    - language: 32
+      text: Hola de nuevo
+    - language: 14
+      text: Nous saluons le retour
+    - language: 20
+      text: Ben tornato
+    - language: 1
+      text: "\u0645\u0631\u062D\u0628\u0627 \u0628\u0639\u0648\u062F\u062A\u0643"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: RATE
+    translations:
+    - language: 10
+      text: Would you mind giving us your opinion?
+    - language: 32
+      text: Te molestaria darnos tu opinion?
+    - language: 14
+      text: Pourriez-vous nous donner votre opinion?
+    - language: 20
+      text: Ti dispiacerebbe dare la tua opinione?
+    - language: 1
+      text: "\u0647\u0644 \u0644\u062F\u064A\u0643 \u0645\u0627\u0646\u0639 \u062A\u0639\u0637\u064A\u0646\u0627
+        \u0631\u0623\u064A\u0643\u061F"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: RATE_YES
+    translations:
+    - language: 10
+      text: Sure
+    - language: 32
+      text: Claro
+    - language: 10
+      text: "S\xFBr"
+    - language: 20
+      text: Sicuro
+    - language: 1
+      text: "\u0628\u0627\u0644\u062A\u0623\u0643\u064A\u062F"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: RATE_LATER
+    translations:
+    - language: 10
+      text: Later
+    - language: 32
+      text: Despues
+    - language: 14
+      text: Plus tard
+    - language: 20
+      text: Dopo
+    - language: 1
+      text: "\u0641\u064A \u0648\u0642\u062A \u0644\u0627\u062D\u0642"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: STORE
+    translations:
+    - language: 10
+      text: Store
+    - language: 32
+      text: Tienda
+    - language: 14
+      text: Boutique
+    - language: 20
+      text: Deposito
+    - language: 1
+      text: "\u0645\u062A\u062C\u0631"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: RATE_NO
+    translations:
+    - language: 10
+      text: Go away
+    - language: 32
+      text: Fuera
+    - language: 14
+      text: Allez-vous en
+    - language: 20
+      text: Va via
+    - language: 1
+      text: "\u0627\u0628\u062A\u0639\u062F, \u0627\u0646\u0635\u0631\u0641, \u062E\u0631\u062C"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SUITS
+    translations:
+    - language: 10
+      text: Costume
+    - language: 32
+      text: Traje
+    - language: 14
+      text: Costume
+    - language: 20
+      text: Tailleur
+    - language: 1
+      text: "\u0645\u0644\u0627\u0628\u0633"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: BOARDS
+    translations:
+    - language: 10
+      text: Boards
+    - language: 32
+      text: Tablas
+    - language: 14
+      text: Planches
+    - language: 20
+      text: Tavolas
+    - language: 1
+      text: "\u0645\u0632\u0644\u062C\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: BUY
+    translations:
+    - language: 10
+      text: Buy
+    - language: 32
+      text: Comprar
+    - language: 14
+      text: Acheter
+    - language: 20
+      text: Acquistare
+    - language: 1
+      text: "\u064A\u0634\u062A\u0631\u0649"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: USE
+    translations:
+    - language: 10
+      text: Use
+    - language: 32
+      text: Usar
+    - language: 14
+      text: "\xC9quiper"
+    - language: 20
+      text: Uso
+    - language: 1
+      text: "\u0627\u0633\u062A\u0639\u0645\u0627\u0644"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: VIBRATION
+    translations:
+    - language: 10
+      text: Vibration
+    - language: 32
+      text: Vibracion
+    - language: 14
+      text: Vibration
+    - language: 20
+      text: Vibrazione
+    - language: 1
+      text: "\u0627\u0647\u062A\u0632\u0627\u0632"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: GAME_OVER
+    translations:
+    - language: 10
+      text: Game Over
+    - language: 32
+      text: Juego Terminado
+    - language: 14
+      text: "Jeu termin\xE9 "
+    - language: 20
+      text: Gioco Finito
+    - language: 1
+      text: "\u0627\u0646\u062A\u0647\u062A \u0627\u0644\u0644\u0639\u0628\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: DISTANCE_LABEL
+    translations:
+    - language: 10
+      text: Distance
+    - language: 32
+      text: Distancia
+    - language: 14
+      text: "\xC9loignement"
+    - language: 20
+      text: Distanza
+    - language: 1
+      text: "\u0627\u0647\u062A\u0632\u0627\u0632"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: SCORE_LABEL
+    translations:
+    - language: 10
+      text: Score
+    - language: 32
+      text: Puntaje
+    - language: 14
+      text: Marquer
+    - language: 20
+      text: Punteggio
+    - language: 1
+      text: "\u0646\u062A\u064A\u062C\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: BEST_SCORE_LABEL
+    translations:
+    - language: 10
+      text: Best Score
+    - language: 32
+      text: Mejor Puntaje
+    - language: 14
+      text: Meilleur Marquer
+    - language: 20
+      text: Miglior punteggio
+    - language: 1
+      text: "\u0623\u0641\u0636\u0644 \u0646\u062A\u064A\u062C\u0629"
+    showTranslations: 0
+    showWord: 0
+  - keywordId: BEST_DISTANCE_LABEL
+    translations:
+    - language: 10
+      text: Best Distance
+    - language: 32
+      text: Mejor Distancia
+    - language: 14
+      text: "Meilleure \xC9loignement"
+    - language: 20
+      text: Miglior Distanza
+    - language: 1
+      text: "\u0623\u0641\u0636\u0644 \u0627\u0644\u0642\u0637\u0631"
+    showTranslations: 0
+    showWord: 0

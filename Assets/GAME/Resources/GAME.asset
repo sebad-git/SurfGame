@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2648c00b58d754b84af494900882b3, type: 3}
+  m_Name: GAME
+  m_EditorClassIdentifier: 
+  MUSIC:
+    looseMusic: {fileID: 8300000, guid: 1b03734efcf49184f80f3f6ae74e57da, type: 3}
+    countDownSound: {fileID: 8300000, guid: ce7c490e7931ac74aa96036f9a8d9307, type: 3}
+    gameMusic: {fileID: 8300000, guid: 2226fa83d2010c245b2c2bf317c643d9, type: 3}
+  GUI:
+    gameoverDelay: 2
+    gamesPerAds: 5
+    gamesPerRate: 7
+    gameoverMenu: {fileID: 114000013434518602, guid: e758db7107f99754eae70800a2a3656c,
+      type: 2}
+    pauseMenu: {fileID: 114000011116700926, guid: 351b17e1341e83445a5777f80a187ac2,
+      type: 2}
+    rateMenu: {fileID: 114994156413608306, guid: 3eed32da12cba744ba72ab2040b888f0,
+      type: 2}
+    optionsMenu: {fileID: 114000013106477422, guid: 83442e55c67b1484ea1300476222c761,
+      type: 2}
+    objectivesMenu: {fileID: 114000013040356660, guid: 3c2dca8e9cdb24e4a814903adc677fff,
+      type: 2}
+    scoresMenu: {fileID: 114000011968413860, guid: 779d672159538294cb3e325f8d54a1e9,
+      type: 2}
+    storeMenu: {fileID: 114632635491521884, guid: 32db8c24baa0667488fb56324238ccd5,
+      type: 2}
+  CONNECTIONS: {fileID: 11400000, guid: 7976376b5d2d68142a22a54110031e0b, type: 2}
+  showMusic: 0
+  showGui: 0
+  hitEffects:
+  - {fileID: 21300000, guid: daf6eabcadcc4554bbcc2b1a8cda4237, type: 3}
+  - {fileID: 21300002, guid: daf6eabcadcc4554bbcc2b1a8cda4237, type: 3}
+  - {fileID: 21300004, guid: daf6eabcadcc4554bbcc2b1a8cda4237, type: 3}
+  - {fileID: 21300006, guid: daf6eabcadcc4554bbcc2b1a8cda4237, type: 3}
+  STORE_ITEMS:
+    suits:
+    - name: Default Suit
+      type: 0
+      itemId: defaultSuit
+      cost: 0
+      icon: {fileID: 21300000, guid: 28e8df3b00b4d334ea58eed28d36a696, type: 3}
+      texture: {fileID: 2800000, guid: 63d6daa7e5dacce41b8b315d7087e2cd, type: 3}
+      showItem: 0
+    - name: Sky Blue Suit
+      type: 0
+      itemId: skyblue
+      cost: 10000
+      icon: {fileID: 21300000, guid: 882a40af9d92f464cad0c84d0db51b6c, type: 3}
+      texture: {fileID: 2800000, guid: 33560402f1c2c644092f309436f7b689, type: 3}
+      showItem: 0
+    - name: Sunrise Suit
+      type: 0
+      itemId: sunrise
+      cost: 25000
+      icon: {fileID: 21300000, guid: 15ffd6a52d86ce44ba3459d204c16f07, type: 3}
+      texture: {fileID: 2800000, guid: 09636ff836b19984bad577d131e79b67, type: 3}
+      showItem: 0
+    - name: Hawaian Suit
+      type: 0
+      itemId: hawaian
+      cost: 80000
+      icon: {fileID: 21300000, guid: c442b34261bf62049b7fcc326fc45771, type: 3}
+      texture: {fileID: 2800000, guid: 60d311e2564e24649a1eeb1c59ab357e, type: 3}
+      showItem: 0
+    - name: Firestorm Suit
+      type: 0
+      itemId: firestorm
+      cost: 100000
+      icon: {fileID: 21300000, guid: 19fa3abd70836b743a3cf5c01a309a05, type: 3}
+      texture: {fileID: 2800000, guid: f8b6ceead498725419e7dfb2f2199bab, type: 3}
+      showItem: 0
+    boards:
+    - name: Default Board
+      type: 1
+      itemId: defaultBoard
+      cost: 0
+      icon: {fileID: 21300000, guid: f31605f3e51cd614ba2699243e28b259, type: 3}
+      texture: {fileID: 2800000, guid: 18ac3e183827dbb4ea6a6a4c4f780347, type: 3}
+      showItem: 0
+    - name: Golden Board
+      type: 1
+      itemId: golden
+      cost: 5000
+      icon: {fileID: 21300000, guid: 42739e9e93c8ca3449e74ee02b738ac7, type: 3}
+      texture: {fileID: 2800000, guid: 041fa9dc74d85ec46a17f24a9d976b61, type: 3}
+      showItem: 0
+    - name: Sunset Board
+      type: 1
+      itemId: sunset
+      cost: 10000
+      icon: {fileID: 21300000, guid: 635f5a351dc4d2d4ba4f1004185230ab, type: 3}
+      texture: {fileID: 2800000, guid: 1dde8ced37bc8c940a0c69dffbfcbede, type: 3}
+      showItem: 0
+    - name: Rainbow Board
+      type: 1
+      itemId: rainbow
+      cost: 25000
+      icon: {fileID: 21300000, guid: a5d307c7fd889454bb6430b06b4ca1e6, type: 3}
+      texture: {fileID: 2800000, guid: 6a4bbba342371534b8d7336e8233785e, type: 3}
+      showItem: 0
+    - name: Flaming Board
+      type: 1
+      itemId: fireboard
+      cost: 80000
+      icon: {fileID: 21300000, guid: 28de46085edc8d34db9eb836491c96d4, type: 3}
+      texture: {fileID: 2800000, guid: 5cec473f8dcb9a147b3d3dcc0f0478fe, type: 3}
+      showItem: 0
+  showMisc: 0
+  showStore: 0
