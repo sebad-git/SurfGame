@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77864fab688e5904da3f0443f4c687c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  databaseUrl: https://surfandroidgame.firebaseio.com/
+  databaseRoot: https://surfandroidgame.firebaseio.com/
 --- !u!4 &786005948
 Transform:
   m_ObjectHideFlags: 0
@@ -690,12 +690,12 @@ Prefab:
     - target: {fileID: 224000012509064820, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 1.8999863
+      value: 1.8999939
       objectReference: {fileID: 0}
     - target: {fileID: 224000010039478772, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.8999939
+      value: -0.9000244
       objectReference: {fileID: 0}
     - target: {fileID: 224000010007770566, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
         type: 2}
@@ -796,6 +796,46 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 1.9000092
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -137.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 40.768
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 246
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010543513000, guid: 54f68dbe1b13ee640ae4c567d5c3f121,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 58.537
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54f68dbe1b13ee640ae4c567d5c3f121, type: 2}
