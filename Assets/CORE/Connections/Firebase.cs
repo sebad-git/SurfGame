@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Proyecto26;
 using System;
+using System.Text.RegularExpressions;
+using System.Linq;
+using System.Reflection;
 
 
 public class Firebase : MonoBehaviour {
@@ -16,36 +19,49 @@ public class Firebase : MonoBehaviour {
 
 	public delegate void OnPost();
 	public delegate void OnGet<T> (T result);
-	public delegate void OnGetArray<T> (Firebase.FArray<T> farray);
+	public delegate void OnGetArray<T> (List<T> data);
 
-	public void getData<T>(string path, OnGet<T> callback){
+	public void GetData<T>(string path, OnGet<T> callback){
 		string url = String.Format ("{0}{1}.json", databaseUrl,path);
-		Debug.Log("CALLING URL:"+url);
 		RestClient.Get(url).Then( response => {
 			Debug.Log(String.Format("Response code:{0}",response.StatusCode));
 			callback(JsonUtility.FromJson<T>(response.Text));
 		});
 	}
 
-	public void listData<T>(string path, OnGetArray<T> callback){
+	public void ListData<T>(string path, string orderBy, OnGetArray<T> callback){
 		string url = String.Format ("{0}{1}.json", databaseUrl,path);
-		Debug.Log("CALLING URL:"+url);
 		RestClient.Get(url).Then( response => {
-			Debug.Log(String.Format("Response code:{0}",response.StatusCode));
-			string jsonArray = String.Format("{{\"content\": [{0}]}}",response.Text);
-			Debug.Log(jsonArray);
-			Firebase.FArray<T> farray = JsonUtility.FromJson<Firebase.FArray<T>>(jsonArray);
-			Debug.Log(farray.content.Length);
-			callback(farray);
+			try{
+				Debug.Log(String.Format("Response code:{0}",response.StatusCode));
+				string jsonArray = ParseData(response.Text);
+				Firebase.JsonArray<T> farray = JsonUtility.FromJson<Firebase.JsonArray<T>>(jsonArray);
+				List<T> list = farray.content.ToList();
+				if(orderBy!=null){
+					Type type = typeof(T);
+					MemberInfo field = type.GetField(orderBy);
+					if(field!=null){
+						list = (from us in list orderby field select us).ToList();
+					}
+				}
+				callback(farray.content.ToList());
+			} catch(Exception e){ Debug.LogError(e.Message); }
 		});
 	}
 
-	public void setData<T>(string path, T data, OnPost callback){
+	public void UpdateData<T>(string path, T data, OnPost callback){
 		string url = String.Format ("{0}{1}.json", databaseUrl,path);
 		RestClient.Put<T>(url,data).Then( onResolved: response => { callback(); });
 	}
 
+	public string ParseData(string json){
+		string pattern = "{\"[a-zA-Z0-9]*\":{", pattern2 = "},\"[a-zA-Z0-9]*\":{";
+		string parsedJson = Regex.Replace (json.Trim(), pattern,"{\"content\":[{",RegexOptions.IgnoreCase);
+		parsedJson = Regex.Replace (parsedJson, pattern2,"},{",RegexOptions.IgnoreCase);
+		parsedJson= parsedJson.Substring(0,parsedJson.LastIndexOf ("}"));
+		return parsedJson+"]}";
+	}
 
-	[System.Serializable] public class FArray<T>{ public T[] content; }
+	[System.Serializable] public class JsonArray<T>{ public T[] content; }
 
 }

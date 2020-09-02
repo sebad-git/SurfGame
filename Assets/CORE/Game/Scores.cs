@@ -28,14 +28,11 @@ public class Scores : MonoBehaviour {
 			string criteria="score";
 			if(scoreType==ScoreType.BEST_SCORE){ criteria = "score";}
 			if(scoreType==ScoreType.BEST_DISTANCE){ criteria = "distance"; }
-			Firebase.Instance.listData<ScoreData>(GameData.USERS, data => {
-				ScoreData[] users = data.content;
-				Debug.Log(data.content.Length);
-				List<ScoreData> orderByScore = (from us in users.ToList() orderby us.totalScore select us).ToList();
-				orderByScore.ForEach( us => scores.Add(us));
+			Firebase.Instance.ListData<ScoreData>(GameData.USERS,"totalScore", data => {
+				List<ScoreData> users = data;
+				users.ForEach( us => scores.Add(us));
 				//Display.
 				this.display(scores);
-
 			});
 		}catch(System.Exception e){
 			loader.GetComponentInChildren<Text>().text="Error loading data.";

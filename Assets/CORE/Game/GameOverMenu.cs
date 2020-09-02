@@ -29,7 +29,7 @@ public class GameOverMenu : MonoBehaviour {
 		if(System.String.IsNullOrEmpty(data.playerName)){data.playerName="Anonymus"; }
 		data.date=GameData.getDate();
 		ScoreData scoreData=new ScoreData(data);
-		Firebase.Instance.setData<ScoreData>(string.Format("Game/splash/BestScores/{0}",data.id), scoreData, () => 
+		Firebase.Instance.UpdateData<ScoreData>(string.Format("Game/splash/BestScores/{0}",data.id), scoreData, () => 
 			{ Debug.Log(string.Format("Data {0} uploaded.",data.id)); });
 		//fill score.
 		this.score.text=GameController.instance.scoreLabel.text;

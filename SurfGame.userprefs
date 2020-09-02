@@ -1,11 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CORE\Test\DataTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CORE\Game\Scores.cs">
     <Files>
-      <File FileName="Assets\CORE\Connections\Firebase.cs" Line="23" Column="33" />
-      <File FileName="Assets\CORE\Game\Scores.cs" Line="29" Column="27" />
-      <File FileName="Assets\CORE\IO\GameData.cs" Line="11" Column="2" />
-      <File FileName="Assets\CORE\Test\DataTest.cs" Line="21" Column="35" />
+      <File FileName="Assets\CORE\Game\Scores.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
