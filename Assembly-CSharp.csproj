@@ -64,7 +64,6 @@
      <Compile Include="Assets\CORE\Cameras\TargetFieldOfView.cs" />
      <Compile Include="Assets\CORE\Character\Player.cs" />
      <Compile Include="Assets\CORE\Character\Ragdoll.cs" />
-     <Compile Include="Assets\CORE\Connections\AdMobManager.cs" />
      <Compile Include="Assets\CORE\Connections\Config\AdmobConfig.cs" />
      <Compile Include="Assets\CORE\Connections\Config\ConnectionsConfig.cs" />
      <Compile Include="Assets\CORE\Connections\Config\FacebookConfig.cs" />
@@ -74,6 +73,7 @@
      <Compile Include="Assets\CORE\Connections\Facebook\FBManagerInvite.cs" />
      <Compile Include="Assets\CORE\Connections\Facebook\FBManagerShare.cs" />
      <Compile Include="Assets\CORE\Connections\Firebase.cs" />
+     <Compile Include="Assets\CORE\Connections\UnityAds.cs" />
      <Compile Include="Assets\CORE\Game\ChoosScore.cs" />
      <Compile Include="Assets\CORE\Game\Config\Common\BaseGameConfig.cs" />
      <Compile Include="Assets\CORE\Game\Config\Common\GUIConfig.cs" />
@@ -137,6 +137,7 @@
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_TextureMult_Bumped.shader" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_Lit.shader" />
      <None Include="Assets\CORE\Shaders\TSF\Shaders\TSFOutline.shader" />
+     <None Include="Assets\UnityAds\link.xml" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_Plain_AdditiveZ.shader" />
      <None Include="Assets\CORE\Shaders\TSF\Shaders\TSF.shader" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_TextureMult.shader" />
@@ -325,14 +326,16 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/deneg/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.Monetization.Editor">
+ <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{B13EDF04-26F1-889E-BA24-6F38182AFE2E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{3AD6C8F2-FCAC-4942-53A4-FDA6C27FB4DA}</Project>      <Name>GoogleMobileAds</Name>    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
-      <Project>{348DC0AB-A87E-D565-8E28-4E2C7E747323}</Project>      <Name>GoogleMobileAds.Editor</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

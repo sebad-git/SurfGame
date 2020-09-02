@@ -59,14 +59,8 @@
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
-     <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\R.txt" />
-     <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-     <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\res\values\values.xml" />
-     <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\proguard.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\third_party_licenses.txt" />
-     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.CoreModule">
@@ -252,12 +246,12 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/deneg/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{3AD6C8F2-FCAC-4942-53A4-FDA6C27FB4DA}</Project>      <Name>GoogleMobileAds</Name>    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
-      <Project>{348DC0AB-A87E-D565-8E28-4E2C7E747323}</Project>      <Name>GoogleMobileAds.Editor</Name>    </ProjectReference>
+ <Reference Include="UnityEngine.Monetization.Editor">
+ <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

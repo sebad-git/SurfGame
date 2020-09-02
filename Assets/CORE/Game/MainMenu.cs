@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour {
 		AudioListener.volume=data.sound;
 	}
 
-	void Start () { AdMobManager.showBanner(false); namePanel.gameObject.SetActive(false); }
+	void Start () { UnityAds.Instance.ShowBanner(false); namePanel.gameObject.SetActive(false); }
 
 	public void play() {
 		GameData data = GameData.load();

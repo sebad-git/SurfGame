@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
 
 public class GameController : MonoBehaviour {
 	
@@ -30,11 +31,12 @@ public class GameController : MonoBehaviour {
 		GameController.gameCounter++;
 		Application.targetFrameRate=30;
 		this.sound=gameObject.GetComponent<AudioSource>(); 
-		AdMobManager.showBanner(true);
+		UnityAds.Instance.ShowBanner(true);
 		Camera.main.GetComponent<Animator>().enabled=false;
 		Screen.sleepTimeout=SleepTimeout.NeverSleep;
 		this.startCountDown();
 	}
+
 
 	private IEnumerator countDown(){
 		this.gameStarted=false; Time.timeScale=0; this.counter.enabled=true;

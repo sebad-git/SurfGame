@@ -15,7 +15,7 @@ public class GameOverMenu : MonoBehaviour {
 	private const string distanceFormat="{0} m.";
 
 	void Start(){
-		AdMobManager.showBanner(false);
+		UnityAds.Instance.ShowBanner(false);
 		this.config=(GameConfig)ConfigLoader.loadConfig(ConfigLoader.GAME_CONFIG);
 		int score = int.Parse( GameController.instance.scoreLabel.text);
 		float distance = GameController.instance.getDistance();
@@ -47,9 +47,8 @@ public class GameOverMenu : MonoBehaviour {
 		//Screen Normal.
 		Screen.sleepTimeout=SleepTimeout.SystemSetting;
 		//Interisial.
-		if(GameController.gameCounter>=0){ AdMobManager.createInterstitial(); }
 		if(GameController.gameCounter>this.config.GUI.gamesPerAds){
-			bool shown = AdMobManager.showInterstitial(); if(shown){ GameController.gameCounter=0; }
+			UnityAds.Instance.ShowInterstitialAd(); GameController.gameCounter=0;
 		}
 		if(data.rated==false && GameController.gameCounter>this.config.GUI.gamesPerRate){ GameObject.Instantiate(this.config.GUI.rateMenu); }
 	}

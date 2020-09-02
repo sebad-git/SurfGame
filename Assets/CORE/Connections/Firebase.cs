@@ -39,7 +39,7 @@ public class Firebase : MonoBehaviour {
 				jsonArray.Replace("-","");
 				Firebase.JsonArray<T> farray = JsonUtility.FromJson<Firebase.JsonArray<T>>(jsonArray);
 				List<T> list = farray.content.ToList();
-				callback(farray.content.ToList());
+				callback(list);
 			} catch(Exception e){ Debug.LogError(e.Message); }
 		});
 	}
