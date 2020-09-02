@@ -1,7 +1,4 @@
-﻿using Firebase;
-using Firebase.Database;
-using Firebase.Unity.Editor;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -28,26 +25,18 @@ public class Scores : MonoBehaviour {
 	private void loadScores(){
 		try{
 			List<ScoreData> scores = new List<ScoreData>();
-			FirebaseManager.init();
-			//Debug.Log("Connecting...");
 			string criteria="score";
 			if(scoreType==ScoreType.BEST_SCORE){ criteria = "score";}
-			if(scoreType==ScoreType.BEST_DISTANCE){ criteria = "distance";}
-			FirebaseDatabase.DefaultInstance.GetReference(GameData.USERS).OrderByChild(criteria).LimitToLast(10).GetValueAsync().ContinueWith(task => {
-					//LOADER.
-				if (task.IsFaulted) { Debug.LogError("Error loading data."); loader.GetComponentInChildren<Text>().text="Error loading data."; }
-					else if (task.IsCompleted) {
-						//Debug.Log("Data ready!");
-						DataSnapshot snapshot = task.Result;
-						//GET DATA.
-						System.Collections.Generic.IEnumerable<DataSnapshot> children = snapshot.Children;
-						foreach(DataSnapshot child in children){ 
-							ScoreData data = JsonUtility.FromJson<ScoreData>(child.GetRawJsonValue()); scores.Add(data);
-						}
-						//Display.
-						this.display(scores);
-					}
-				});
+			if(scoreType==ScoreType.BEST_DISTANCE){ criteria = "distance"; }
+			Firebase.Instance.listData<ScoreData>(GameData.USERS, data => {
+				ScoreData[] users = data.content;
+				Debug.Log(data.content.Length);
+				List<ScoreData> orderByScore = (from us in users.ToList() orderby us.totalScore select us).ToList();
+				orderByScore.ForEach( us => scores.Add(us));
+				//Display.
+				this.display(scores);
+
+			});
 		}catch(System.Exception e){
 			loader.GetComponentInChildren<Text>().text="Error loading data.";
 			Debug.LogError("Error loading data."+e);

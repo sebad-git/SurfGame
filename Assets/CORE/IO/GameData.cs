@@ -7,7 +7,7 @@ public class GameData {
 	public const string CURRENT_GAME="CURRENT_GAME";
 	public const string ID_FORMAT="msmjtw{0}";
 	public const string DATE_FORMAT="yyyy/MM/dd HH:mm:ss";
-	public const string USERS = "Game/jtw/BestScores";
+	public const string USERS = "Game/splash/BestScores";
 
 	public string playerName;
 	public string id;

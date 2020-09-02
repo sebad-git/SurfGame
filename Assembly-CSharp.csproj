@@ -73,7 +73,7 @@
      <Compile Include="Assets\CORE\Connections\Facebook\FBManagerBase.cs" />
      <Compile Include="Assets\CORE\Connections\Facebook\FBManagerInvite.cs" />
      <Compile Include="Assets\CORE\Connections\Facebook\FBManagerShare.cs" />
-     <Compile Include="Assets\CORE\Connections\FirebaseManager.cs" />
+     <Compile Include="Assets\CORE\Connections\Firebase.cs" />
      <Compile Include="Assets\CORE\Game\ChoosScore.cs" />
      <Compile Include="Assets\CORE\Game\Config\Common\BaseGameConfig.cs" />
      <Compile Include="Assets\CORE\Game\Config\Common\GUIConfig.cs" />
@@ -108,63 +108,33 @@
      <Compile Include="Assets\CORE\Locale\Translator.cs" />
      <Compile Include="Assets\CORE\Test\AddUsers.cs" />
      <Compile Include="Assets\CORE\Test\DataTest.cs" />
-     <Compile Include="Assets\CORE\Test\FBDatabase.cs" />
      <Compile Include="Assets\CORE\World\Coin.cs" />
      <Compile Include="Assets\CORE\World\Config\MovingObjectConfig.cs" />
      <Compile Include="Assets\CORE\World\Config\TileCreatorConfig.cs" />
      <Compile Include="Assets\CORE\World\MovingObject.cs" />
      <Compile Include="Assets\CORE\World\TileSpawner.cs" />
      <Compile Include="Assets\CORE\World\Water.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdLoader.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdPosition.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdRequest.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdSize.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\BannerView.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeEventArgs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeTemplateAd.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\Gender.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\ICustomInAppPurchase.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\ICustomInAppPurchaseProcessor.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\IDefaultInAppPurchaseProcessor.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\IInAppPurchaseResult.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\InterstitialAd.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\NativeExpressAdView.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\Reward.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\RewardBasedVideoAd.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\DummyClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IAdLoaderClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IBannerClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\ICustomNativeTemplateClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IInterstitialClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\INativeExpressAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IRewardBasedVideoAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\Utils.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\AdLoaderClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\BannerClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\CustomInAppPurchaseListener.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\CustomNativeTemplateClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\DefaultInAppPurchaseListener.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InAppPurchase.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InAppPurchaseResult.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InterstitialClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\NativeExpressAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Utils.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\AdLoaderClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\BannerClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\CustomNativeTemplateClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Externs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\InterstitialClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\NativeExpressAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Utils.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\Common.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\Extensions.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\HttpBase.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\JsonHelper.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestException.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestHelper.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestHelperExtension.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\ResponseHelper.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\StaticCoroutine.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\RestClient.cs" />
+     <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\RestClientPromise.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\EnumerableExt.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseException.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseStateException.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\Promise.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\Promise_NonGeneric.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\PromiseHelpers.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\PromiseTimer.cs" />
+     <Compile Include="Assets\RestClient\Packages\RSG.Promise\Tuple.cs" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_TextureMult_Bumped.shader" />
-     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
-     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_Lit.shader" />
      <None Include="Assets\CORE\Shaders\TSF\Shaders\TSFOutline.shader" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_Plain_AdditiveZ.shader" />
@@ -172,7 +142,6 @@
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_TextureMult.shader" />
      <None Include="Assets\FacebookSDK\link.xml" />
      <None Include="Assets\CORE\Shaders\MatCap Shaders\Shaders\MatCap_TextureAdd.shader" />
-     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.36f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
@@ -347,30 +316,6 @@
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.App">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Auth">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Database">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.TaskExtension">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
- </Reference>
- <Reference Include="Google.MiniJson">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Compat">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Tasks">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/deneg/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
  </Reference>
@@ -384,6 +329,10 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{B13EDF04-26F1-889E-BA24-6F38182AFE2E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.csproj">
+      <Project>{3AD6C8F2-FCAC-4942-53A4-FDA6C27FB4DA}</Project>      <Name>GoogleMobileAds</Name>    </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
+      <Project>{348DC0AB-A87E-D565-8E28-4E2C7E747323}</Project>      <Name>GoogleMobileAds.Editor</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

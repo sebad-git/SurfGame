@@ -14,6 +14,7 @@
 
 using System;
 
+using GoogleMobileAds;
 using GoogleMobileAds.Common;
 
 namespace GoogleMobileAds.Api
@@ -25,48 +26,19 @@ namespace GoogleMobileAds.Api
         // Creates a BannerView and adds it to the view hierarchy.
         public BannerView(string adUnitId, AdSize adSize, AdPosition position)
         {
-            client = GoogleMobileAdsClientFactory.BuildBannerClient();
+            this.client = MobileAds.GetClientFactory().BuildBannerClient();
             client.CreateBannerView(adUnitId, adSize, position);
 
-            this.client.OnAdLoaded += (sender, args) =>
-                {
-                    if(this.OnAdLoaded != null)
-                    {
-                        this.OnAdLoaded(this, args);
-                    }
-                };
+            ConfigureBannerEvents();
+        }
 
-            this.client.OnAdFailedToLoad += (sender, args) =>
-                {
-                    if(this.OnAdFailedToLoad != null)
-                    {
-                        this.OnAdFailedToLoad(this, args);
-                    }
-                };
+        // Creates a BannerView with a custom position.
+        public BannerView(string adUnitId, AdSize adSize, int x, int y)
+        {
+            this.client = MobileAds.GetClientFactory().BuildBannerClient();
+            client.CreateBannerView(adUnitId, adSize, x, y);
 
-            this.client.OnAdOpening += (sender, args) =>
-                {
-                    if(this.OnAdOpening != null)
-                    {
-                        this.OnAdOpening(this, args);
-                    }
-                };
-
-            this.client.OnAdClosed += (sender, args) =>
-                {
-                    if(this.OnAdClosed != null)
-                    {
-                        this.OnAdClosed(this, args);
-                    }
-                };
-
-            this.client.OnAdLeavingApplication += (sender, args) =>
-                {
-                    if(this.OnAdLeavingApplication != null)
-                    {
-                        this.OnAdLeavingApplication(this, args);
-                    }
-                };
+            ConfigureBannerEvents();
         }
 
         // These are the ad callback events that can be hooked into.
@@ -79,6 +51,9 @@ namespace GoogleMobileAds.Api
         public event EventHandler<EventArgs> OnAdClosed;
 
         public event EventHandler<EventArgs> OnAdLeavingApplication;
+
+        // Called when an ad is estimated to have earned money.
+        public event EventHandler<AdValueEventArgs> OnPaidEvent;
 
         // Loads an ad into the BannerView.
         public void LoadAd(AdRequest request)
@@ -102,6 +77,96 @@ namespace GoogleMobileAds.Api
         public void Destroy()
         {
             client.DestroyBannerView();
+        }
+
+        // Returns the height of the BannerView in pixels.
+        public float GetHeightInPixels()
+        {
+            return client.GetHeightInPixels();
+        }
+
+        // Returns the width of the BannerView in pixels.
+        public float GetWidthInPixels()
+        {
+            return client.GetWidthInPixels();
+        }
+
+        // Set the position of the BannerView using standard position.
+        public void SetPosition(AdPosition adPosition)
+        {
+            client.SetPosition(adPosition);
+        }
+
+        // Set the position of the BannerView using custom position.
+        public void SetPosition(int x, int y)
+        {
+            client.SetPosition(x, y);
+        }
+
+        private void ConfigureBannerEvents()
+        {
+            this.client.OnAdLoaded += (sender, args) =>
+            {
+                if (this.OnAdLoaded != null)
+                {
+                    this.OnAdLoaded(this, args);
+                }
+            };
+
+            this.client.OnAdFailedToLoad += (sender, args) =>
+            {
+                if (this.OnAdFailedToLoad != null)
+                {
+                    this.OnAdFailedToLoad(this, args);
+                }
+            };
+
+            this.client.OnAdOpening += (sender, args) =>
+            {
+                if (this.OnAdOpening != null)
+                {
+                    this.OnAdOpening(this, args);
+                }
+            };
+
+            this.client.OnAdClosed += (sender, args) =>
+            {
+                if (this.OnAdClosed != null)
+                {
+                    this.OnAdClosed(this, args);
+                }
+            };
+
+            this.client.OnAdLeavingApplication += (sender, args) =>
+            {
+                if (this.OnAdLeavingApplication != null)
+                {
+                    this.OnAdLeavingApplication(this, args);
+                }
+            };
+
+            this.client.OnPaidEvent += (sender, args) =>
+            {
+                if (this.OnPaidEvent != null)
+                {
+                    this.OnPaidEvent(this, args);
+                }
+            };
+
+        }
+
+        // Returns the mediation adapter class name.
+        [Obsolete("MediationAdapterClassName() is deprecated, use GetResponseInfo.MediationAdapterClassName() instead.")]
+        public string MediationAdapterClassName()
+        {
+            return this.client.MediationAdapterClassName();
+        }
+
+        // Returns ad request response info.
+        public ResponseInfo GetResponseInfo()
+        {
+            return new ResponseInfo(this.client.GetResponseInfoClient());
+
         }
     }
 }

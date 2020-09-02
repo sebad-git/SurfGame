@@ -59,28 +59,14 @@
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-app-unity-6.15.2\AndroidManifest.xml" />
-     <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\R.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-common-19.3.0\proguard.txt" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\AndroidManifest.xml" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-database-unity-6.15.2\R.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-app-unity-6.15.2\R.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-auth-unity-6.15.2\AndroidManifest.xml" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-common-19.3.0\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\res\values\values.xml" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-database-unity-6.15.2\proguard.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-common-19.3.0\R.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-common-19.3.0\third_party_licenses.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-database-unity-6.15.2\AndroidManifest.xml" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-app-unity-6.15.2\proguard.txt" />
-     <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\proguard.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-auth-unity-6.15.2\R.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-19.3.0\third_party_licenses.txt" />
-     <None Include="Assets\Plugins\Android\com.google.firebase.firebase-auth-unity-6.15.2\proguard.txt" />
+     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.CoreModule">
@@ -257,30 +243,6 @@
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.App">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Auth">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Database">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.TaskExtension">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
- </Reference>
- <Reference Include="Google.MiniJson">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Compat">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Tasks">
- <HintPath>C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/deneg/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
  </Reference>
@@ -290,6 +252,12 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/deneg/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="GoogleMobileAds.csproj">
+      <Project>{3AD6C8F2-FCAC-4942-53A4-FDA6C27FB4DA}</Project>      <Name>GoogleMobileAds</Name>    </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
+      <Project>{348DC0AB-A87E-D565-8E28-4E2C7E747323}</Project>      <Name>GoogleMobileAds.Editor</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
