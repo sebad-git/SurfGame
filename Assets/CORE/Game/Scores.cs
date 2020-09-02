@@ -28,12 +28,13 @@ public class Scores : MonoBehaviour {
 			string criteria="score";
 			if(scoreType==ScoreType.BEST_SCORE){ criteria = "score";}
 			if(scoreType==ScoreType.BEST_DISTANCE){ criteria = "distance"; }
-			Firebase.Instance.ListData<ScoreData>(GameData.USERS,"bestScore", data => {
+			Firebase.Instance.ListData<ScoreData>(GameData.USERS, data => {
 				List<ScoreData> users = data;
 				users.ForEach( us => scores.Add(us));
 				//Display.
 				this.display(scores);
 			});
+
 		}catch(System.Exception e){
 			loader.GetComponentInChildren<Text>().text="Error loading data.";
 			Debug.LogError("Error loading data."+e);
@@ -43,21 +44,21 @@ public class Scores : MonoBehaviour {
 	private void display(List<ScoreData> scores){
 		try{
 			if(scoreType==ScoreType.BEST_SCORE){
-				List<ScoreData> orderedScores = scores.OrderByDescending(o=>o.score).ToList(); 
+				scores = scores.OrderByDescending(score => score.totalScore).ToList(); 
 				for (int i = 0; i < this.slots.Length; i++) {
-					if(i < orderedScores.Count){
-						ScoreData scoreData = orderedScores[i];
-						this.slots[i].text = System.String.Format(SCORE_FORMAT,(i+1),scoreData.playerName,scoreData.score);
+					if(i < scores.Count){
+						ScoreData scoreData = scores[i];
+						this.slots[i].text = System.String.Format(SCORE_FORMAT,(i+1),scoreData.playerName,scoreData.totalScore);
 					}else{
 						this.slots[i].text = "";
 					}
 				}
 			}
 			if(scoreType==ScoreType.BEST_DISTANCE){ 
-				List<ScoreData> orderedScores = scores.OrderByDescending(o=>o.distance).ToList(); 
+				scores = scores.OrderByDescending(score => score.distance).ToList(); 
 				for (int i = 0; i < this.slots.Length; i++) {
-					if(i < orderedScores.Count){
-						ScoreData scoreData = orderedScores[i];
+					if(i < scores.Count){
+						ScoreData scoreData = scores[i];
 						this.slots[i].text = System.String.Format(DISTANCE_FORMAT,(i+1),scoreData.playerName,scoreData.distance);
 					}else{
 						this.slots[i].text = "";
