@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Release/splash.apk
+C:/Users/deneg/Dropbox/Repositorios/Unity/PROYECTS/MOBILE/SurfGame/Release/splash.aab
 SceneListBegin?
 Assets/GAME/SCENES/PRELOADER.unity
 Assets/GAME/SCENES/MENU.unity
@@ -22,6 +22,10 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 2a3a5e3ba3b46691bb2855b6e3f67006 Assembly-CSharp.dll:.GameConfig
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Preloader
+05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Utilities.ApplicationQuit
+3385da7206d1cfd7f6ab781101d31e37 UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
+c5ca33017fbf4dd3edb1632e4543d181 UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Utilities.CoroutineExecutor
+05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Placeholder
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -91,6 +95,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 f41c5222aaa4557bb9cafa1c24b37a94 Assembly-CSharp.dll:UnityStandardAssets.Cameras.AutoCam
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Web
 305af0e8a49c982f3c608e8b23a83cdd Assembly-CSharp.dll:mountsix.runner.TileSpawner
+d33aa6d1ff0ef7e2813b067ba3b0a8b9 Assembly-CSharp.dll:.UnityAds
 9a8168d369f85d1020502284dc207668 Assembly-CSharp.dll:.Translator
 af9e80fcdc82e543de38796a740ee372 Assembly-CSharp.dll:.TileCreatorConfig
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -221,6 +226,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FBShareButton
+05524b8f659e7bfe5756d1335fec24ba UnityEngine.Monetization.Editor.dll:UnityEngine.Monetization.Placeholder
 0bda33e85e24e9507cc974911e8cf50f Assembly-CSharp.dll:.BaseGameConfig
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoadingScreen
 a4d836f42105da11f9cb156639b22874 Assembly-CSharp.dll:.ConnectionsConfig
@@ -275,7 +281,6 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-05524b8f659e7bfe5756d1335fec24ba GoogleMobileAds.dll:GoogleMobileAds.Common.MobileAdsEventExecutor
 c94e6b4e741ffa1bba3e24a829006412 Assembly-CSharp.dll:.Firebase
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
