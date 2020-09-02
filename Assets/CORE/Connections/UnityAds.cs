@@ -5,8 +5,11 @@ using UnityEngine.Advertisements;
 
 public class UnityAds : MonoBehaviour, UnityAds.AdManager {
 
-	public string gameId = "project";
-	public bool testMode = true;
+	public enum Platform { ANDROID, IOS }
+	public Platform platform;
+	public string androidGameID = "Play Store ID";
+	public string iosGameID = "App Store ID";
+
 	public string bannerId = "banner";
 	public BannerPosition bannerPosition = BannerPosition.BOTTOM_CENTER;
 	public string videoId = "video";
@@ -16,14 +19,20 @@ public class UnityAds : MonoBehaviour, UnityAds.AdManager {
 	private static UnityAds.AdManager instance;
 	public static UnityAds.AdManager Instance { get {return instance; } }
 
-	void Awake() { 
+	void Awake() {
+		try{ 
+			if(platform==Platform.ANDROID){Advertisement.Initialize(androidGameID, false); }
+			if(platform==Platform.IOS){Advertisement.Initialize(iosGameID, false); }
+		}
+		catch(System.Exception e){ Debug.LogWarning(e.Message); }
 		instance = this; DontDestroyOnLoad(this); 
-		Advertisement.Initialize (gameId, testMode);
 	}
 
 	public void ShowBanner(bool show){
-		if (!show) { Advertisement.Banner.Hide(false); return; }
-		StartCoroutine(ShowBannerWhenInitialized());
+		try{ 
+			if (!show) { Advertisement.Banner.Hide(false); return; }
+			StartCoroutine(ShowBannerWhenInitialized());
+		}catch(System.Exception e){ Debug.LogWarning(e.Message); }
 	}
 
 	private IEnumerator ShowBannerWhenInitialized () {
@@ -33,31 +42,29 @@ public class UnityAds : MonoBehaviour, UnityAds.AdManager {
 	}
 
 	public void ShowInterstitialAd() {
-		if (Advertisement.IsReady()) { Advertisement.Show(); } 
-		else {
-			Debug.Log("Interstitial ad not ready at the moment! Please try again later!");
-		}
+		try{ 
+			if (Advertisement.IsReady()) { Advertisement.Show(); }
+			else { Debug.Log("Interstitial ad not ready at the moment! Please try again later!"); }
+		} catch(System.Exception e){ Debug.LogWarning(e.Message); }
 	}
 
 	public void ShowRewardedVideo() {
-		if (Advertisement.IsReady(rewardVideoId)) {
-			Advertisement.Show(rewardVideoId);
-		} 
-		else {
-			Debug.Log("Rewarded video is not ready at the moment! Please try again later!");
-		}
+		try{ 
+			if (Advertisement.IsReady(rewardVideoId)) { Advertisement.Show(rewardVideoId); } 
+			else { Debug.Log("Rewarded video is not ready at the moment! Please try again later!"); }
+		} catch(System.Exception e){ Debug.LogWarning(e.Message); }
 	}
 
 	public void ShowVideo() {
-		if (Advertisement.IsReady(videoId)) {
-			Advertisement.Show(videoId);
-		}
-		else {
-			Debug.Log("Video is not ready at the moment! Please try again later!");
-		}
+		try{ 
+			if (Advertisement.IsReady(videoId)) { Advertisement.Show(videoId); }
+			else { Debug.Log("Video is not ready at the moment! Please try again later!"); }
+		} catch(System.Exception e){ Debug.LogWarning(e.Message); }
+
+
 	}
 
-	public interface AdManager{
+	public interface AdManager {
 		void ShowBanner (bool show);
 		void ShowInterstitialAd();
 		void ShowVideo();

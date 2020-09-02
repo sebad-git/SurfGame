@@ -8,13 +8,13 @@ using System.Linq;
 using System.Reflection;
 
 
-public class Firebase : MonoBehaviour {
+public class Firebase : MonoBehaviour, Firebase.IFirebase {
 
 	[Header ("DATABASE URL")]
 	public string databaseRoot = "https://surfandroidgame.firebaseio.com/";
 
-	private static Firebase instance;
-	public static Firebase Instance { get {return instance; } }
+	private static Firebase.IFirebase instance;
+	public static Firebase.IFirebase Instance { get {return instance; } }
 
 	void Awake() { instance = this; DontDestroyOnLoad(this); }
 
@@ -59,4 +59,9 @@ public class Firebase : MonoBehaviour {
 
 	[System.Serializable] public class JsonArray<T>{ public T[] content; }
 
+	public interface IFirebase{
+		void GetData<T> (string path, OnGet<T> callback);
+		void ListData<T> (string path, OnGetArray<T> callback);
+		void UpdateData<T>(string path, T data, OnPost callback);
+	}
 }
