@@ -28,7 +28,7 @@ public class Scores : MonoBehaviour {
 			string criteria="score";
 			if(scoreType==ScoreType.BEST_SCORE){ criteria = "score";}
 			if(scoreType==ScoreType.BEST_DISTANCE){ criteria = "distance"; }
-			Firebase.Instance.ListData<ScoreData>(GameData.USERS,"totalScore", data => {
+			Firebase.Instance.ListData<ScoreData>(GameData.USERS,"bestScore", data => {
 				List<ScoreData> users = data;
 				users.ForEach( us => scores.Add(us));
 				//Display.
